@@ -57,7 +57,7 @@
 
         <div class="collapse navbar-collapse navbar-right" id="sub-navbar">
             @if($config->get('navbar_search') == 'Y2')
-            <form class="navbar-form navbar-left" action="{{ url() }}" method="get">
+            <form class="navbar-form navbar-left" action="{{ url()->to(null) }}" method="get">
                 <input type="hidden" name="vid" value="" />
                 <input type="hidden" name="mid" value="" />
                 <input type="hidden" name="act" value="IS" />
@@ -71,7 +71,7 @@
                 <li class="dropdown" id="dropdown-toggle-search">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search" area-hidden="true"></i><span class="visible-xs-inline-block"> 검색</span></a>
                     <div class="dropdown-menu dropdown-form" role="search">
-                        <form action="{{ url() }}" method="get">
+                        <form action="{{ url()->to(null) }}" method="get">
                             <input type="hidden" name="vid" value="" />
                             <input type="hidden" name="mid" value="" />
                             <input type="hidden" name="act" value="IS" />

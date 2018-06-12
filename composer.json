@@ -1,0 +1,49 @@
+{
+    "name": "xpressengine-plugin/simplestrap",
+    "description": "This Package is Xpressengine Plugin - Simplestrap.",
+    "keywords": [
+        "xpressengine",
+        "plugin"
+    ],
+    "license": "LGPL-2.1",
+    "version": "1.0.0",
+    "type": "xpressengine-plugin",
+    "support": {
+        "email": "developers@xpressengine.com"
+    },
+    "authors": [
+        {
+            "name": "XE Developers",
+            "email": "developers@xpressengine.com",
+            "homepage": "http://xpressengine.io",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "xpressengine": {
+            "title": "Simplestrap",
+            "component": {
+                "theme/simplestrap@theme": {
+                    "class": "Xpressengine\\Plugins\\Simplestrap\\Theme\\Theme",
+                    "name": "Simplestrap 테마",
+                    "description": "The Theme supported by Simplestrap plugin."
+                },
+                "widget/board@list/skin/simplestrap@defaultskin": {
+                    "class": "Xpressengine\\Plugins\\Simplestrap\\Skins\\DefaultSkin",
+                    "name": "Simplestrap 기본 게시글 위젯스킨",
+                    "description": "The Skin supported by Simplestrap plugin."
+                }
+            }
+        }
+    },
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Xpressengine\\Plugins\\Simplestrap\\": "src/",
+            "Xpressengine\\Plugins\\Simplestrap\\Components\\": "components/"
+        },
+        "classmap": [
+            "theme/Theme.php"
+        ]
+    }
+}

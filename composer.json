@@ -29,7 +29,7 @@
                     "description": "The Theme supported by Simplestrap plugin."
                 },
                 "widget/board@list/skin/simplestrap@defaultskin": {
-                    "class": "Xpressengine\\Plugins\\Simplestrap\\Skins\\DefaultSkin",
+                    "class": "Xpressengine\\Plugins\\Simplestrap\\Components\\Skins\\Board\\Simplestrap\\DefaultSkin",
                     "name": "Simplestrap 기본 게시글 위젯스킨",
                     "description": "The Skin supported by Simplestrap plugin."
                 }
